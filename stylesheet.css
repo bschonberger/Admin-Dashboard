@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template: 20vh 20vh 20vh 20vh 20vh / 20vw 20vw 20vw 20vw 20vw;
+}
+
+.sidebar{
+    position: relative;
+    grid-column: 1/1;
+    grid-row: 1/6;
+    background-color:deepskyblue;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    gap:30px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 3px 0px 2px rgba(0,0,0,0.5); 
+
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.sideHeader img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+.sidebar img:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.sideItems,.sideHeader{
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction:row;
+}
+.sideItems:hover,.sideHeader:hover{
+    cursor: pointer;
+}
+
+.header{
+    grid-column: 2/6;
+    grid-row: 1/1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 3px 5px dimgray;
+
+}
+.top,.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.left,.right{
+    display: flex;
+    align-items: center;
+}
+.bottom .right{
+    gap:20px;
+}
+.bottom .left img{
+    width: 50px;
+    height: 50px;
+}
+.bottom .left .text{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button{
+    background-color:orange;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-style: none;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+
+input{
+    background-color:gainsboro;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+
+.mainGrid{
+    grid-column: 2/5;
+    grid-row: 2/6;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projectGrid{
+    grid-column: 2/5;
+    grid-row: 2/6;
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 330px 330px;
+    grid-template-rows: 130px 130px 130px;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.head{
+    padding-top: 35px;
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: bolder;}
+
+.projects{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 3%;
+    box-shadow: 5px 10px orange;
+}
+.projects .title{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.projects p{
+    font-size: 15px;
+    color:dimgrey;
+}
+.projects:hover{
+    cursor: pointer;
+}
+
+.sideGrid{
+    grid-column: 5/6;
+    grid-row: 2/6;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightTop, .rightBottom{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    gap: 5px;
+    margin-bottom: 0px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3%;
+    box-shadow: 5px 10px orange;
+}
+
+.bottomItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightHeader{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+}
+
+.rightSide,.leftSide{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightTitle{
+    font-weight: bold;
+}
